@@ -119,6 +119,18 @@
         {{ 'customer.register.password' | t }}
       </label>
     </div>
+            <div class="custom-field" style="margin-bottom:20px">
+      <div class="single-note">
+        <input type="radio" id="CustomerFormTea" name="customer[note][artist]" value="Gift buyer"> 
+        <label style="display:inline-block" for="CustomerFormTea">Customer</label>
+      </div>
+
+      <div class='single-note'>
+        <input type="radio" id="CustomerFormCoffee" name="customer[note][artist]" value="Beer brewer">
+        <label style="display:inline-block" for="CustomerFormCoffee">Artist</label>
+      </div>
+          
+      </div>
     {%- if form.errors contains 'password' -%}
       <span id="RegisterForm-password-error" class="form__message">
         <svg aria-hidden="true" focusable="false" role="presentation">
